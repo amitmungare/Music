@@ -1,0 +1,954 @@
+/* this is the css file for the home screen (also its reused in the play.html  screen) */
+
+/* color used in the home screen  */
+:root {
+    --bg-color-2: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+    --bg-color-card: linear-gradient(to bottom right, red, yellow);
+/* this are the different background colors used  */
+    --bg-tm-color1: rgba(219, 3, 183, 0.5);
+    --bg-tm-color2: rgba(0, 174, 255, 0.5);
+    --bg-tm-color3: rgb(138, 43, 226, 0.5);
+    --bg-tm-color4: rgba(243, 243, 8, 0.5);
+    --bg-tm-color5: rgba(255, 127, 80, 0.5);
+    --bg-tm-color7: rgba(0, 174, 255, 0.5);
+    --bg-tm-color6: rgba(214, 10, 187, 0.5);
+    --bg-tm-color8: rgba(167, 5, 99, 0.5);
+    --bg-tm-color9: rgba(0, 0, 0, 0.9);
+}
+/* this is the animation used in favroute section  */
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+
+/* in the body i have used a background image and all the fonts have color white and font family sans-serif */
+body {
+    background: url(images/background15.jpg);   
+    color: white;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* on all the icons there is a hover effect with a background color and border radius which makes it look beautify */
+i:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    background-color: var(--bg-tm-color1)
+}
+
+
+/* the css for the nav bar is written here  */
+/* this is the css for the whole nav-bar  */
+#nav-bar {
+    height: auto;
+    width: auto;
+    background-image: var(--bg-color-2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+/* as i have divided the nav-bar in two parts this is the css for left-nav-bar */
+#navbar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* the website logo height and width */
+#logo-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+/* hover effect for the logo  */
+#logo-image:hover {  
+    transform: scale(1.1);
+}
+
+/* this is the common padding class given to most of the icons and items in the nav-bar  */
+.padding-item {
+    padding: 10px;
+}
+
+/* this is the icon size in the nav bar  */
+.icon-size {
+    font-size: 20px;
+}
+
+/* css for the favourate section here i have added the animation  */
+#fav-list {
+    margin-left: 130px;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+}
+
+/* this is the css for the right part of the nav-bar it includes search function, notification, profile picture  */
+#right-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* css for the search div, which includes icon and input tag  */
+#search-div {
+    width: 100%;
+    height: 45px;
+    margin: 10px;
+    border-radius: 100px;
+}
+
+/* removed the border and gave a background for the search input tag  */
+#search-div input {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: var(--bg-color-2);
+}
+
+/* profile icon in the nav bar  */
+#profile-icon {
+    height: 70px;
+    width: 70px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+
+/* hover effect for the profile icon  */
+#profile-icon:hover {
+    transform: scale(1.1);
+}
+/* the nav-bar css ends here  */
+
+
+/*here is the css for the main section this is the whole page */
+#main {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*as we have divided the main page in two parts
+the basic-page begains here*/
+#basic-page {
+    width: 100%;
+}
+
+/* this is the css for the Home Screen Carousel */
+#start {
+    height: auto;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    transition: all ease-in-out 1s;
+}
+
+/* css for the Home Screen Carousel image  */
+#start img {
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+/* hover effect on the Home Screen Carousel image */
+#start img:hover {
+    padding: 0px;
+    transform: scale(1.2);
+    transition: all ease-in-out;
+    box-shadow: 0px 0px 12px 0.1px rgb(5, 5, 5);
+}
+
+/* alining the Home Screen Carousel */
+#start-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* the carousel section ends here */
+
+
+
+/*css for the latest-release section begains here*/
+/* css for the latest-release section with backgroud color  */
+#latest-release {
+    background-color: var(--bg-tm-color2);
+    padding: 2%;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+/* css for latest-release-body  */
+#latest-release-body {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+/* this is the single card of latest-release  */
+.latest-card {
+    background-image: url(images/background8.jpg);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+/* css for the left part of card  */
+.latest-card-inner-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* time duration of latest-release card (song) */
+.latest-time {
+    margin-top: 8px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* image in the card  */
+.image-style {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* latest-release image position  */
+.latest-img-size {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* position of the play btn in the card view  */
+.style-img-play-card {
+    position: absolute;
+    top: 2px;
+    left: 8px;
+}
+
+/* image size  */
+.latest-img-size {
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+}
+
+/* paly button in the card view  */
+.style-img-play-card {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/* on hover paly btn opacity changes  */
+.style-img-play-card:hover {
+    opacity: 0.7;
+}
+/* the Latest Release section ends here  */
+
+
+
+/*the popular-artists section starts here */
+/* popular-artists body css with background  */
+#popular-artists {
+
+    background-color: var(--bg-tm-color3);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* popular-artists inner div  */
+#popular-artists-div {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* single artist profile  */
+.artist-profile {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* css for the popular-artists image div */
+/* .image-style {
+    position: relative;
+    top: 0;
+    left: 0;
+} */
+/* css for the popular-artists image */
+.style-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* play button in the popular-artists (visiable on hover) */
+.style-img-play {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+}
+
+/* css for the play image  */
+.style-img-play {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/* hover effect for the play button  */
+.style-img-play:hover {
+    opacity: 0.7;
+}
+
+/* styling for the artists name  */
+.style-p {
+    text-align: center;
+}
+/*the popular-artists section ends here */
+
+
+
+/* styling for th station-section */
+/* the main station-section body  */
+#station-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-tm-color4);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+/* p tag in the station-section */
+#station-section p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* first image in the station-section  */
+#station-section-img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* common css for all the stations  */
+.station-div {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+/* images in the station  */
+.station-div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* names in the station div  */
+.station-div p {
+    position: absolute;
+    text-align: center;
+}
+
+/* hover effect for the image in the station section  */
+.station-div img:hover {
+    transform: scale(1.1);
+}
+/* css for the station-section ends here  */
+
+
+/*the css for the category section starts here  */
+/* the category section body */
+#category-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--bg-tm-color5);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 5px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* class for each part in the category section */
+.category-div {
+    display: flex;
+    height: 150px;
+    width: 250px;
+    background-image: url("images/musicLogo.jpg");
+    margin: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* name styling  */
+#category-section P {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* party image  */
+#party-div {
+    background-image: url(images/party.jpg);
+    background-repeat: round;
+}
+
+/* electronic image  */
+#electronic-div {
+    background-image: url(images/Electronic-Music.jpg);
+    background-repeat: round;
+}
+
+/* roadtrip image  */
+#roadtrip-div {
+    background-image: url(images/road_trip.jpg);
+    background-repeat: round;
+}
+
+/* hover effect for the images in the category section */
+.category-div:hover {
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+/* the category section ends here  */
+
+
+
+/* this is the css for Latest English section*/
+/* main section of Latest English section */
+#Latest-English {
+    background-color: var(--bg-tm-color6);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* Latest English div  */
+.latest-song-main-div {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* css for each song   */
+.latest-song-div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* hover effect for Latest English div */
+.latest-song-div:hover {
+    background-color: var(--bg-tm-color1);
+    color: rgb(241, 199, 58);
+}
+
+/* image in the Latest English section  */
+.latest-song-img {
+    border-radius: 20px;
+    height: 120px;
+    width: 120px;
+}
+
+/* name of the song  */
+.latest-song-div h4 {
+    font-size: 14px;
+}
+
+/* date of the songs  */
+.latest-song-div p {
+    font-size: 12px;
+}
+/* the Latest English section ends here  */
+
+
+
+/* the Latest hindi section starts here  */
+
+#Latest-Hindi {
+    background-color: var(--bg-tm-color7);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+/* i have reused the css from the Latest English section in latest hindi section  */
+/* the Latest hindi section ends here  */
+
+
+/* the queue-section starts here  */
+/*main queue-section css */
+#queue-section {   
+    background-color: var(--bg-tm-color8);
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 47%;
+    margin-top: 60px;
+    margin-left: 7%;
+}
+
+/* this is the queue section header  */
+#queue-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* css for the content(data) of queue section */
+.playlist-queue {
+    width: auto;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(images/background12.jpg);
+}
+
+/* song body div  */
+.playlist-queue-inner-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover effect for each song  */
+.playlist-queue:hover {
+    color: rgb(230, 8, 45);
+}
+
+/* css padding class  */
+.playlist-padding {
+    padding: 10px;
+}
+
+/* image width and height */
+.playlist-img {
+    height: 70px;
+    width: 70px;
+}
+
+/* queue aside section added the scrolling function here */
+#queue-aside-section {
+    height: 870px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* the scrolling bar is hidden  */
+#queue-aside-section::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* this is the dropdown used in website, i have reused the css for all the dropdown */
+.dropdown {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+/* dropdown content display  */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: rgba(7, 0, 0, 0.9);
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(235, 12, 12, 0.8);
+    padding: 12px 16px;
+    z-index: 1;
+}
+/* hover effect for the dropdown  */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* font color on hover  */
+.dropdown-content p:hover {
+    color: tomato;
+}
+/* end of css of the dropdown */
+
+
+/* css for the Bottom Music Player  */
+
+/* footer section starts here  */
+/* this is the container for the whole footer */
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: var(--bg-tm-color9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    padding: 0px 3%;
+    box-sizing: border-box;
+    z-index: 6;
+    position: sticky;
+    bottom: 0;
+}
+
+/* footer is divided into three parts */
+/* this is the song description part  */
+.active-song-description {
+    height: 90%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* the current song which is being played, this is the image container for that. */
+#song-image {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+/* current song image */
+#song-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/*this is the css for heart and ban icon */
+.heart-and-ban-icon {
+    height: 100%;
+    padding-top: 4%;
+}
+
+/*this is song decscription */
+.song-desc {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+/* song name */
+.song-desc div:nth-child(1) {
+    font-size: 14px;
+}
+
+/* song author */
+.song-desc div:nth-child(2) {
+    font-size: 12px;
+}
+
+/* this is the player part of the footer here there are all the controls  */
+.player {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* controls is the container for all the center controls of the player */
+.controls {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* this is the song-duration slider */
+#slider {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* css for song time  */
+.time {
+    margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+    width: 100%;
+}
+
+/* for audio and main center player */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+/* hover effect for the slider */
+.slider:hover {
+    opacity: 1;
+}
+
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4caf50;
+    cursor: pointer;
+}
+
+/* this contains all the other icons  */
+.extras {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* these are all the media queries for "home.html" page */
+
+/* this is the media for below 1500px screen  */
+@media screen and (max-width:1500px) {
+
+    /* the main screen display is made block  */
+    #main {
+        display: block;
+    }
+
+    /* reducing the size of the image  */
+    #start img {
+        width: 380px;
+        height: 280px;
+    }
+
+    /* made the width of the queue section 80%  */
+    #queue-section {
+        width: 80%;
+
+    }
+}
+
+/* this is the media for below 1200px screen  */
+@media screen and (max-width:1200px) {
+
+    /* the carousel section for sereen smaller than 1200px is made in column view  */
+    #start-div {
+        flex-direction: column;
+    }
+
+}
+
+/* this is the media for below 1000px screen  */
+@media screen and (max-width:1000px) {
+
+    /* css for the station section, the flex wrap is made wrap */
+    #station-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+}
+
+/* this is the media for below 850px screen  */
+@media screen and (max-width:850px) {
+
+    /* have reduced the margin for favourate section  */
+    #fav-list {
+        margin-left: 5px;
+    }
+
+    /* disable the search input section  */
+    #input-space {
+        display: none;
+    }
+
+    /* disabled the mic option for smaller screen  */
+    #mic-icon {
+        display: none;
+    }
+
+}
+
+/* this is the media for below 700px screen  */
+@media screen and (max-width:700px) {
+
+    /* disabled the ban option for smaller screen  */
+    #stop-icon {
+        display: none;
+    }
+
+    /* disabled the other option for smaller screen and provied a list view this will come soon.. */
+    .left-items {
+        display: none;
+    }
+}
+
+/* this is the media for below 500px screen  */
+@media screen and (max-width:500px) {
+
+    /* reduced the font size of name for better view and to avoid overlapping */
+    .latest-name h4,
+    p,
+    i {
+        font-size: 10px;
+    }
+
+}
+
+/* this is the media for below 470px screen  */
+@media screen and (max-width:470px) {
+
+    /* reduced the logo size  */
+    #logo-image {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    /* reduced the profile icon size  */
+    #profile-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* disabled the fav option  */
+    #fav-list {
+        display: none;
+    }
+
+}
+
+/* this is the media for below 430px screen  */
+@media screen and (max-width:430px) {
+
+    /* reduced the size of the Carousel image  */
+    #start img {
+        width: 280px;
+        height: 180px;
+    }
+
+}
+
+/* this is the media for below 370px screen  */
+@media screen and (max-width:370px) {
+
+/* reduced the width and height of the image */
+    .playlist-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* reduced the width and height of the names (p tag and h4 tag) */
+    .playlist-names p,
+    h4 {
+        width: 6px;
+        height: 6px;
+    }
+
+    /* gave a margin left for time  */
+    .latest-time {
+        margin-left: 10px;
+    }
+
+}
+

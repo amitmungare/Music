@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head begains here  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Music player name -->
+    <title>Music Player</title>
+    <!-- this script is for font awesome icons -->
+    <script src="https://kit.fontawesome.com/4072b8f88c.js" crossorigin="anonymous"></script>
+    <!-- css link for the home page  -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<!-- head ends here  -->
+
+<!-- (please note: the home.html page is renamed to index.html page  (alse the css)) -->
+<!-- note: the data used on this website is a dummy data and the information can be false  -->
+
+<!-- the main body begains here -->
+
+<body>
+
+    <!-- this is the header part -->
+    <header>
+        <!-- this is the nav bar where i have added logo, favourate section, search, notification, profile  -->
+        <!-- have divided the nav-bar in two parts left-part and right-part  -->
+        <nav id="nav-bar">
+            <!-- this is the left-part of the nav-bar which contains logo and fav section  -->
+            <div id="navbar-left">
+                <!-- here i have used a tag to come on the home page as most of the websites have -->
+                <a href="index.html">
+                    <!-- this is the website logo  -->
+                    <!-- all the images are stored in the images folder -->
+                    <img id="logo-image" src="images/logo.png" alt="logo">
+                </a>
+                <!-- this left-part also contains fav-section this will show the favourate songs(comings soon..) -->
+                <div>
+                    <!-- this is the favourate section, i have added animation -->
+                    <samp id="fav-list">Favourites</samp>
+                </div>
+
+            </div>
+            <!-- the left part ends here  -->
+
+            <!-- here is the right-part  -->
+            <!-- this part have search function, mic, notification, and profile -->
+            <div id="right-div">
+                <!-- this is the search function  -->
+                <div id="search-div">
+                    <!-- have taken the icon from font awesome using a i tag -->
+                    <!-- this is the search icon  -->
+                    <i id="search-icon" class="fas fa-search padding-item icon-size"></i>
+                    <!-- this is the edit text filed to enter the song to be searched -->
+                    <input type="text" name="" id="input-space" placeholder="Search...">
+                    <!-- this is the mic icon  -->
+                    <i id="mic-icon" class="fas fa-microphone padding-item icon-size"></i>
+                </div>
+                <!-- this is the notification icon  -->
+                <i id="bell-icon" class="far fa-bell icon-size padding-item"></i>
+                <!-- this is the profile, i have added my github link on profile   -->
+                <a href="https://github.com/amitmungare" target="_blank">
+                    <!-- image for the profile  -->
+                    <img id="profile-icon" src="images/AmitMungare.jpg" alt="">
+                </a>
+            </div>
+            <!-- the right-section ends here  -->
+
+        </nav>
+        <!-- the nav bar ends here -->
+    </header>
+    <!-- the header ends here  -->
+
+
+
+
+    <!-- i have created different sections to display different parts   -->
+    <!-- this is the main part the whole page  -->
+    <section id="main">
+
+        <!-- the main page is seprated in two parts basic-section and queue-section -->
+        <!-- here is the basic-section, which have Home Screen Carousel, latest-release-section, popular-artists, station-section...  -->
+        <section id="basic-page">
+            <!--this is the Home Screen Carousel -->
+            <section id="treanding-section">
+                <div id="start">
+                    <div id="start-div">
+                        <!-- these are the 3 images in the carousel  -->
+                        <img src="images/topthree1.jpg" alt="">
+                        <img src="images/topthree2.jpg" alt="">
+                        <img src="images/topthree3.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- the carousel section ends here  -->
+
+
+
+
+            <!--this is the latest-release section-->
+            <section id="latest-release">
+                <!-- used h3 tag to display the name  -->
+                <h3>Latest Release</h3>
+                <!-- this is the latest release body -->
+                <div id="latest-release-body">
+                    <!-- this is the content of the latest release section -->
+                    <!-- it will contain the cards with all the data-->
+                    <!-- 1st card  -->
+                    <div class="latest-card">
+                        <!-- this is the inner div with image, song name, and date  -->
+                        <div class="latest-card-inner-div">
+                            <div class="image-style">
+                                <!-- this is the song image  -->
+                                <img class="latest-img-size" src="images/music1.jpg" alt="">
+                                <!-- this is the play image, it will be displayed as we hover it -->
+                                <img class="style-img-play-card" src="images/playbtnnew.png" alt="">
+                            </div>
+                            <!-- here is the song name and data  -->
+                            <div class="latest-name padding-item">
+                                <h4>Jugnu</h4>
+                                <p>AUG_11_2021</p>
+                            </div>
+                        </div>
+                        <!-- this is the div for dropdown and audio duration -->
+                        <div class="latest-time padding-item">
+                            <!-- this is the dropdown section which gives additions functions  -->
+                            <div class="dropdown">
+                                <!-- this is the ... icon  -->
+                                <span><i class="fas fa-ellipsis-h"></i> </span>
+                                <div class="dropdown-content">
+                                    <!-- this are all the options in the dropdown menu  -->
+                                    <p><i class="fas fa-play"></i> Play Now</p>
+                                    <p><i class="fas fa-plus"></i> Add To Queue</p>
+                                    <p><i class="fas fa-clipboard-list"></i> Add To Favourites</p>
+                                    <p><i class="fas fa-info-circle"></i>Get Info</p>
+                                </div>
+                            </div>
+                            <!-- here is the time duration of each song  -->
+                            <p>4:44</p>
+                        </div>
+                    </div>
+                    <!-- the card view div ends here  -->
+
+                    <!-- 2nd card  -->
+                    <div class="latest-card">
+                        <div class="latest-card-inner-div">
+                            <div class="image-style">
+                                <img class="latest-img-size" src="images/music2.jpg" alt="">
+                                <img class="style-img-play-card" src="images/playbtnnew.png" alt="">
+                            </div>
+                            <div class="latest-name padding-item">
+                                <h4>Aise_Chhoro</h4>
+                                <p>AUG_11_2021</p>
+                            </div>
+                        </div>
+                        <div class="latest-time padding-item">
+                            <div class="dropdown">
+                                <span><i class="fas fa-ellipsis-h"></i> </span>
+                                <div class="dropdown-content">
+                                    <p><i class="fas fa-play"></i> Play Now</p>
+                                    <p><i class="fas fa-plus"></i> Add To Queue</p>
+                                    <p><i class="fas fa-clipboard-list"></i> Add To Favourites</p>
+                                    <p><i class="fas fa-info-circle"></i>Get Info</p>
+                                </div>
+                            </div>
+                            <p>5:14</p>
+                        </div>
+                    </div>
+                    <!-- 3rd card  -->
+                    <div class="latest-card">
+                        <div class="latest-card-inner-div">
+                            <div class="image-style">
+                                <img class="latest-img-size" src="images/music3.jpg" alt="">
+                                <img class="style-img-play-card" src="images/playbtnnew.png" alt="">
+                            </div>
+                            <div class="latest-name padding-item">
+                                <h4>Tera_Naam</h4>
+                                <p>AUG_11_2021</p>
+                            </div>
+                        </div>
+                        <div class="latest-time padding-item">
+                            <div class="dropdown">
+                                <span><i class="fas fa-ellipsis-h"></i> </span>
+                                <div class="dropdown-content">
+                                    <p><i class="fas fa-play"></i> Play Now</p>
+                                    <p><i class="fas fa-plus"></i> Add To Queue</p>
+                                    <p><i class="fas fa-clipboard-list"></i> Add To Favourites</p>
+                                    <p><i class="fas fa-info-circle"></i>Get Info</p>
+                                </div>
+                            </div>
+                            <p>2:24</p>
+                        </div>
+                    </div>
+                    <!-- 4th card  -->
+                    <div class="latest-card">
+                        <div class="latest-card-inner-div">
+                            <div class="image-style">
+                                <img class="latest-img-size" src="images/music4.jpg" alt="">
+                                <img class="style-img-play-card" src="images/playbtnnew.png" alt="">
+                            </div>
+                            <div class="latest-name padding-item">
+                                <h4>Sanak</h4>
+                                <p>AUG_11_2021</p>
+                            </div>
+                        </div>
+                        <div class="latest-time padding-item">
+                            <div class="dropdown">
+                                <span><i class="fas fa-ellipsis-h"></i> </span>
+                                <div class="dropdown-content">
+                                    <p><i class="fas fa-play"></i> Play Now</p>
+                                    <p><i class="fas fa-plus"></i> Add To Queue</p>
+                                    <p><i class="fas fa-clipboard-list"></i> Add To Favourites</p>
+                                    <p><i class="fas fa-info-circle"></i>Get Info</p>
+                                </div>
+                            </div>
+                            <p>3:21</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- the latest release body ends here  -->
+            </section>
+            <!-- the latest release section ends here  -->
+
+
+
+
+            <!-- this is the popular-artists section here there are all the popular artist's -->
+            <section id="popular-artists">
+                <!-- used h3 tag to display the name  -->
+                <h3>Popular Artists</h3>
+                <!-- this is the popular-artists body  -->
+                <div id="popular-artists-div">
+                    <!-- here is all the data of the artist  -->
+                    <!-- artist one -->
+                    <div class="artist-profile">
+                        <!-- the image is clickable which will take you to the Single Playlist Screen -->
+                        <a href="play.html">
+                            <!-- here are the images  -->
+                            <div class="image-style">
+                                <!-- this is the artist image  -->
+                                <img class="style-img" src="images/Taylor Swift.jpg" alt="Taylor Swift">
+                                <!-- this is the play image it will be visable as you hover it -->
+                                <img class="style-img-play" src="images/playbtnnew.png" alt="">
+                            </div>
+                        </a>
+                        <!-- the artist name  -->
+                        <p class="style-p">Taylor</p>
+                    </div>
+                    <!-- artist two -->
+                    <div class="artist-profile">
+                        <a href="play.html">
+                            <div class="image-style">
+                                <img class="style-img" src="images/Selena-Gomez.jpg" alt="Selena Gomez">
+                                <img class="style-img-play" src="images/playbtnnew.png" alt="">
+                            </div>
+                        </a>
+                        <p class="style-p">Selena</p>
+                    </div>
+                    <!-- artist three -->
+                    <div class="artist-profile">
+                        <a href="play.html">
+                            <div class="image-style">
+                                <img class="style-img" src="images/jubin-nautiyal.jpg" alt="Jubin-Nautiyal">
+                                <img class="style-img-play" src="images/playbtnnew.png" alt="">
+                            </div>
+                        </a>
+                        <p class="style-p">Jubin</p>
+                    </div>
+                    <!-- artist four -->
+                    <div class="artist-profile">
+                        <a href="play.html">
+                            <div class="image-style">
+                                <img class="style-img" src="images/Justin Bieber.jpg" alt="Justin Bieber">
+                                <img class="style-img-play" src="images/playbtnnew.png" alt="">
+                            </div>
+                        </a>
+                        <p class="style-p">Justin</p>
+                    </div>
+                    <!-- artist five -->
+                    <div class="artist-profile">
+                        <a href="play.html">
+                            <div class="image-style">
+                                <img class="style-img" src="images/Dhvani-Bhanushali.jpg" alt="Dhvani-Bhanushali">
+                                <img class="style-img-play" src="images/playbtnnew.png" alt="">
+                            </div>
+                        </a>
+                        <p class="style-p">Dhvani</p>
+                    </div>
+                    <!-- artist six -->
+                    <div class="artist-profile">
+                        <a href="play.html">
+                            <div class="image-style">
+                                <img class="style-img" src="images/divine.jfif" alt="Divine">
+                                <img class="style-img-play" src="images/playbtnnew.png" alt="">
+                            </div>
+                        </a>
+                        <p class="style-p">Divine</p>
+                    </div>
+                    <!-- artist seven -->
+                    <div class="artist-profile">
+                        <a href="play.html">
+                            <div class="image-style">
+                                <img class="style-img" src="images/AR_Rahman.jpg" alt="AR Rahman">
+                                <img class="style-img-play" src="images/playbtnnew.png" alt="">
+                            </div>
+                        </a>
+                        <p class="style-p">AR Rahman</p>
+                    </div>
+
+                </div>
+                <!-- the popular-artists body ends here  -->
+            </section>
+            <!-- the popular-artists section ends here  -->
+
+
+
+
+            <!--this is the music station section -->
+            <section id="station-section">
+                <!-- this is the music station image  -->
+                <img id="station-section-img" src="images/musicstation.jpg" alt="">
+
+                <!-- this are the different stations  -->
+                <!-- love station data  -->
+                <div id="station-love" class="station-div">
+                    <!-- station image  -->
+                    <img src="images/love.jpg" alt="love">
+                    <!-- station name  -->
+                    <p>Love</p>
+                </div>
+                <!-- Retro station data  -->
+                <div id="station-retro" class="station-div">
+                    <img src="images/retro.jpg" alt="Retro">
+                    <p>Retro</p>
+                </div>
+                <!-- Chill station data  -->
+                <div id="station-chill" class="station-div">
+                    <img src="images/chill.jpg" alt="Chill">
+                    <p>Chill</p>
+                </div>
+                <!-- Workout station data  -->
+                <div id="station-workout" class="station-div">
+                    <img src="images/workout.jpg" alt="Workout">
+                    <p>Workout</p>
+                </div>
+                <!-- Rock station data  -->
+                <div id="station-rock" class="station-div">
+                    <img src="images/rock.jpg" alt="Rock">
+                    <p>Rock</p>
+                </div>
+                <!-- Pop station data  -->
+                <div id="station-pop" class="station-div">
+                    <img src="images/pop.jpg" alt="Pop">
+                    <p>Pop</p>
+                </div>
+
+            </section>
+            <!-- the music station section ends here  -->
+
+
+
+
+            <!--this is the category section  -->
+            <section id="category-section">
+                <!-- category section data  -->
+                <!-- category section 1 -->
+                <div id="party-div" class="category-div">
+                    <!-- i have added the image in the css part -->
+                    <!-- this is the category name  -->
+                    <p>Party</p>
+                </div>
+                <!-- category section 2 -->
+                <div id="electronic-div" class="category-div">
+                    <p>Electronic</p>
+                </div>
+                <!-- category section 3 -->
+                <div id="roadtrip-div" class="category-div">
+                    <p>Road Trip</p>
+                </div>
+            </section>
+            <!-- the category section ends here  -->
+
+
+
+
+            <!--this is the Latest English section -->
+            <section id="Latest-English">
+                <!-- i have used h3 tag to display the section name  -->
+                <h3>Latest English</h3>
+                <!-- this is the body of the latest english music section  -->
+                <div class="latest-song-main-div">
+                    <!-- here is the data of latest englist songs  -->
+                    <!-- latest englist song 1  -->
+                    <div class="latest-song-div">
+                        <!-- images of the song  -->
+                        <img class="latest-song-img" src="images/music14.jpg" alt="music">
+                        <!-- name of the song  -->
+                        <h4>Onism</h4>
+                        <!-- date of the song  -->
+                        <p>AUG 12,2021</p>
+                    </div>
+                    <!-- latest englist song 2  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music15.jpg" alt="music">
+                        <h4>Thunder</h4>
+                        <p>JUN 11,2012</p>
+                    </div>
+                    <!-- latest englist song 3  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music17.jpg" alt="music">
+                        <h4>Positions</h4>
+                        <p>AUG 15,2014</p>
+                    </div>
+                    <!-- latest englist song 4  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music19.jpg" alt="music">
+                        <h4>Eastside</h4>
+                        <p>MAY 13,2013</p>
+                    </div>
+                    <!-- latest englist song 5  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music20.jpg" alt="music">
+                        <h4>Clout</h4>
+                        <p>AUG 21,2017</p>
+                    </div>
+                    <!-- latest englist song 6  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music21.jpg" alt="music">
+                        <h4>Tequila</h4>
+                        <p>JAN 19,2016</p>
+                    </div>
+
+                </div>
+                <!--the Latest English body ends here -->
+            </section>
+            <!-- the latest englist section ends here -->
+
+
+
+
+            <!--this is the Latest Hindi section -->
+            <section id="Latest-Hindi">
+                <!-- i have used h3 tag to display the section name  -->
+                <h3>Latest Hindi</h3>
+                <!-- this is the body of the latest Hindi music section  -->
+                <div class="latest-song-main-div">
+                    <!-- here is the data of latest Hindi songs  -->
+                    <!-- latest Hindi song 1  -->
+                    <div class="latest-song-div">
+                        <!-- images of the song  -->
+                        <img class="latest-song-img" src="images/music5.jpg" alt="music">
+                        <!-- name of the song  -->
+                        <h4>Heathens</h4>
+                        <!-- date of the song  -->
+                        <p>AUG 21,2011</p>
+                    </div>
+                    <!-- latest Hindi song 2  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music6.jpg" alt="music">
+                        <h4>Stitches</h4>
+                        <p>JUN 11,2014</p>
+                    </div>
+                    <!-- latest Hindi song 3  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music7.jpg" alt="music">
+                        <h4>Sorry</h4>
+                        <p>AUG 31,2017</p>
+                    </div>
+                    <!-- latest Hindi song 4  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music8.jpg" alt="music">
+                        <h4>WAP</h4>
+                        <p>FEB 21,2005</p>
+                    </div>
+                    <!-- latest Hindi song 5  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music9.jpg" alt="music">
+                        <h4>Summer</h4>
+                        <p>OCT 1,2015</p>
+                    </div>
+                    <!-- latest Hindi song 6  -->
+                    <div class="latest-song-div">
+                        <img class="latest-song-img" src="images/music10.jpg" alt="music">
+                        <h4>Royals</h4>
+                        <p>JAN 3,2004</p>
+                    </div>
+                </div>
+                <!--the Latest Hindi body ends here -->
+            </section>
+            <!-- the latest Hindi section ends here -->
+
+
+        </section>
+        <!-- the basic-section ends here  -->
+
+
+
+
+        <!--this is the queue-section in our main page -->
+        <section id="queue-section">
+            <!-- this is the queue-section body  -->
+            <div id="queue-main-body">
+                <!-- in this div i have added the queue title and more options  -->
+                <div id="queue-header">
+                    <!-- queue section title -->
+                    <h3>Queue</h3>
+                    <!-- dropdown part for queue section  -->
+                    <div class="dropdown">
+                        <!-- name and icon for dropdown  -->
+                        <span>Queue <i class="fas fa-caret-down"></i> </span>
+                        <!-- list of options in the dropdown  -->
+                        <div class="dropdown-content">
+                            <!-- option 1  -->
+                            <p>Playlists</p>
+                            <!-- option 2 -->
+                            <p>Favourite Songs</p>
+                        </div>
+                    </div>
+                    <!-- end of dropdown  -->
+                </div>
+
+                <!-- the body part of queue section, i have use aside for it -->
+                <aside id="queue-aside-section">
+                    <!-- the content(data) of queue section  -->
+                    <!-- song 1  -->
+                    <div class="playlist-queue">
+                        <div class="playlist-queue-inner-div">
+                            <!-- song counter  -->
+                            <p class="playlist-number playlist-padding">01</p>
+                            <!-- song image  -->
+                            <img class="playlist-img playlist-padding" src="images/music22.jpg" alt="image">
+                            <!-- song name  -->
+                            <div class="playlist-names playlist-padding">
+                                <h4>Starving</h4>
+                                <p>Hailee</p>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- heart icon to add the song in fav-list  -->
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+                    </div>
+                    <!-- song 2  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">02</p>
+                            <img class="playlist-img playlist-padding" src="images/music21.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Sorry</h4>
+                                <p>Beyonce</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 3  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">03</p>
+                            <img class="playlist-img playlist-padding" src="images/music20.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Titanium</h4>
+                                <p>David </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 4  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">04</p>
+                            <img class="playlist-img playlist-padding" src="images/music19.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Sugar</h4>
+                                <p>Maroon </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 5  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">05</p>
+                            <img class="playlist-img playlist-padding" src="images/music18.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Brave</h4>
+                                <p>Sara </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 6  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">06</p>
+                            <img class="playlist-img playlist-padding" src="images/music17.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Birthday</h4>
+                                <p>Katy </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 7  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">07</p>
+                            <img class="playlist-img playlist-padding" src="images/music16.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Down</h4>
+                                <p>Marian </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 8  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">08</p>
+                            <img class="playlist-img playlist-padding" src="images/music15.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Diva</h4>
+                                <p>Beyonce</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 9  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">09</p>
+                            <img class="playlist-img playlist-padding" src="images/music14.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Humble</h4>
+                                <p>Kendrick</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 10  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">10</p>
+                            <img class="playlist-img playlist-padding" src="images/music13.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Bugatti</h4>
+                                <p>Ace </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 11  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">11</p>
+                            <img class="playlist-img playlist-padding" src="images/music12.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Suffocate</h4>
+                                <p>Holiday</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 12  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">12</p>
+                            <img class="playlist-img playlist-padding" src="images/music11.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Disturbia</h4>
+                                <p>Rihanna</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 13  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">13</p>
+                            <img class="playlist-img playlist-padding" src="images/music10.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Unwritten</h4>
+                                <p>Natasha </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 14  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">14</p>
+                            <img class="playlist-img playlist-padding" src="images/music9.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Clumsy</h4>
+                                <p>Fergie</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 15  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">15</p>
+                            <img class="playlist-img playlist-padding" src="images/music8.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Headlines</h4>
+                                <p>Drake</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 16  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">16</p>
+                            <img class="playlist-img playlist-padding" src="images/music7.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Bugatti</h4>
+                                <p>Ace </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 17  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">17</p>
+                            <img class="playlist-img playlist-padding" src="images/music6.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Down</h4>
+                                <p>Marian </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 18  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">18</p>
+                            <img class="playlist-img playlist-padding" src="images/music5.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Sugar</h4>
+                                <p>Maroon </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 19  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">19</p>
+                            <img class="playlist-img playlist-padding" src="images/music4.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Titanium</h4>
+                                <p>David </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 20  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">20</p>
+                            <img class="playlist-img playlist-padding" src="images/music3.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Sail</h4>
+                                <p>Awolnation</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 21  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">21</p>
+                            <img class="playlist-img playlist-padding" src="images/music2.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Pompeii</h4>
+                                <p>Bastille</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+                    <!-- song 22  -->
+                    <div class="playlist-queue">
+
+                        <div class="playlist-queue-inner-div">
+                            <p class="playlist-number playlist-padding">22</p>
+                            <img class="playlist-img playlist-padding" src="images/music1.jpg" alt="image">
+                            <div class="playlist-names playlist-padding">
+                                <h4>Sorry</h4>
+                                <p>Beyonce</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="far fa-heart heart-icon playlist-padding"></i>
+                        </div>
+
+                    </div>
+
+                </aside>
+                <!-- the aside section ends here  -->
+            </div>
+            <!-- the queue-section body ends here  -->
+        </section>
+        <!-- the queue-section ends here  -->
+
+    </section>
+    <!-- the main part ends here  -->
+
+
+
+
+    <!-- this is the footer part (to control music) of the music website  -->
+    <!-- the position is fixed  -->
+    <footer id="bottom-footer">
+        <!-- description of the song  -->
+        <div class="active-song-description">
+            <div id="song-image">
+                <!-- song image  -->
+                <img src="images/musicLogo.jpg">
+            </div>
+            <!-- song name and artist name  -->
+            <div class="song-desc">
+                <div>
+                    <!-- song name  -->
+                    Life long
+                </div>
+                <div>
+                    <!-- artist name  -->
+                    Tom
+                </div>
+
+            </div>
+            <!-- heart and ban icon -->
+            <div class="heart-and-ban-icon">
+                <span>
+                    <!-- heart icon -->
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <!-- heart ban icon -->
+                    <i id="stop-icon" class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the song player controls -->
+        <div class="player">
+            <div class="controls">
+                <!-- random song icon  -->
+                <div><i class="fas fa-random"></i></div>
+                <!-- previous track icon  -->
+                <div><i class="fas fa-step-backward"></i></div>
+                <!-- pause icon  -->
+                <div><i class="far fa-pause-circle"></i></i></div>
+                <!-- next track icon  -->
+                <div><i class="fas fa-step-forward"></i></div>
+                <!-- repeat song icon  -->
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+
+            <!-- this is the slider  -->
+            <div id="slider">
+                <!-- current song time  -->
+                <div class="time">
+                    0:00
+                </div>
+                <!-- slider live display (song controler) -->
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- song duration(full time)  -->
+                <div class="time">
+                    4:40
+                </div>
+            </div>
+        </div>
+        <!-- other icons, the volume slider and some more icons -->
+        <div class="extras">
+            <div>
+                <!-- list icon  -->
+                <i class="fas fa-list"></i>
+            </div>
+            <div>
+                <!-- desktop icon  -->
+                <i class="fas fa-desktop left-items"></i>
+            </div>
+            <div>
+                <!-- volume icon  -->
+                <i class="fas fa-volume-up left-items"></i>
+            </div>
+            <!-- volume slider (to control music) -->
+            <div class="slidecontainer left-items" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <!-- expand icon  -->
+                <i class="fas fa-expand-alt left-items"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- the footer ends here  -->
+
+</body>
+<!-- the body ends here  -->
+
+</html>

@@ -1,0 +1,225 @@
+/* this is the css file for the Single Playlist Screen  */
+/* i have reused the home screen css in this page  */
+
+/* this is the animation used in current song palyed (name)  */
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* used a different font for the Single Playlist Screen */
+body {
+  font-family: cursive;
+} 
+
+/*gave a padding of 20px to the main screen 
+other css is been reused from the home.css */
+#main {
+  margin: 20px;
+}
+
+/* width of the basic page is 100% */
+#basic-page {
+  width: 100%;
+}
+
+
+/* this is the css for player information screen  */
+#player-info {
+  height: 30%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  background: rgba(255, 118, 5, 0.2);
+  flex-direction: row;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* current playing music image  */
+#player-img {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 8%;
+}
+
+/* gave padding to the data div  */
+#player-data {
+  margin-left: 20px;
+}
+
+/* display specification for the player information  */
+#player-name-followers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* margin for the song name  */
+#name-para {
+  margin-top: -15px;
+}
+
+/* discription para color changed  */
+#discription-para {
+  color: rgb(231, 210, 210);
+}
+
+/* song name, added animation to the name  */
+
+.animate-charcter{
+  position: relative;
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,#231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+}
+
+
+
+/* css for the play all button  */
+.play-btn {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  margin-right: 40px;
+  padding-left: 26px;
+  padding-right: 26px;
+  position: relative;
+  text-align: left;
+  transition: box-shadow .15s, transform .15s;
+  font-size: 18px;
+}
+
+/* focus effect */
+.play-btn:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+/* hover effect for the paly all button  */
+.play-btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+/* color changes on action performed  */
+.play-btn:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+/* css for the follow button  */
+.follow-btn {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  width: 100px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  white-space: nowrap;
+}
+
+/* hover effect for the follow button  */
+.follow-btn:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+/* this is the right section  of the paly page (similar section and Recently Played section) */
+.similar-div {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* these are all the media queries for "play.html" page */
+
+/* this is the media for below 410px screen  */
+@media screen and (max-width:410px) {
+
+  /* recuded the size of the current song image  */
+  .playlist-img {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+/* this is the media for below 500px screen  */
+@media screen and (max-width:500px) {
+
+  /* reduced the font size of the playlist names */
+  .playlist-names h4 {
+    font-size: 10px;
+  }
+
+  /* set a different width and height to the current playing image  */
+  #player-img {
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+/* this is the media for below 860px screen  */
+@media screen and (max-width:860px) {
+
+  /* set different parameters for the player info section  */
+  #player-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+/* this is the media for below 321px screen  */
+@media screen and (max-width:321px) {
+
+  /* reduced the size of the image so there is no overflow */
+  #player-img {
+    width: 150px;
+    height: 150px;
+  }
+  /* reduced the playlist padding  */
+  .playlist-padding {
+    padding: 5px;
+  }
+}
